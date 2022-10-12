@@ -1,0 +1,29 @@
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+/*Div principal*/
+
+#main{
+    background-color: aquamarine;
+    display:grid;
+    margin: 20px;
+}
+#dni{
+    width: 150px;
+    margin: 2px 0px 2px
+
+}
+#nombre{
+    width: 300px;
+    margin: 2px 0px 2px
+}
+#dir{
+    width: 300px;
+    margin: 2px 0px 2px
+}
+#telf{
+    width: 150px;
+    margin: 2px 0px 2px
+}
