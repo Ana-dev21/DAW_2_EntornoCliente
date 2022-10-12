@@ -62,10 +62,10 @@ box4.id = "telf"
 box4.type = "text"
 contenedor.appendChild(box4)
 
-//Cabecera de los radioButtons, Fieldset
+//Cabecera de los RadioButtons/Formulario/Fieldset
 let cabecera = document.createElement("h3")
 cabecera.id = "titulo_botones"
-let text = document.createTextNode("¿Que tipo de pizza quieres?")
+let text = document.createTextNode("¿Qué tipo de pizza quieres?")
 cabecera.appendChild(text)
 contenedor.appendChild(cabecera)
 
@@ -74,6 +74,7 @@ formBotones.id = "formulario1"
 contenedor.appendChild(formBotones)
 
 let lineas = document.createElement("fieldset")
+lineas.id = "lineas"
 formBotones.appendChild(lineas)
 
 //Boton de pizza individual
@@ -116,4 +117,58 @@ radio4.id = "combo"
 radio4.name = "pizza"
 label5.appendChild(radio4)
 
-//Cabecera del segundo RadioButton/Fieldset
+//Cabecera del segundo RadioButton/Formulario/Fieldset
+let cabecera2 = document.createElement("h3")
+cabecera2.id = "titulo_tipos"
+let text2 = document.createTextNode("¿Qué masa prefieres?")
+cabecera2.appendChild(text2)
+contenedor.appendChild(cabecera2)
+
+let formBotones2 = document.createElement("form")
+formBotones2.id = "formulario2"
+contenedor.appendChild(formBotones2)
+
+let lineas2 = document.createElement("fieldset")
+lineas2.id = "lineas2"
+formBotones2.appendChild(lineas2)
+
+//Boton para masa fina
+let label6 = document.createElement("label")
+label6.id = "opciones_masa"
+let textoMasaFina = document.createTextNode("Fina")
+
+label6.appendChild(textoMasaFina)
+lineas2.appendChild(label6)
+
+let fina = document.createElement("input")
+fina.type = "radio"
+fina.name = "masa"
+fina.id ="fina"
+label6.appendChild(fina)
+
+//Boton para masa clásica
+let textoMasaClasica = document.createTextNode("Clásica")
+label6.appendChild(textoMasaClasica)
+let clasica = document.createElement("input")
+clasica.id = "clasica"
+clasica.type = "radio"
+clasica.name = "masa"
+label6.appendChild(clasica)
+
+//Boton para masa gruesa
+let textoMasaGruesa = document.createTextNode("Masa gruesa")
+label6.appendChild(textoMasaGruesa)
+let gruesa = document.createElement("input")
+gruesa.id = "gruesa"
+gruesa.type = "radio"
+gruesa.name = "masa"
+label6.appendChild(gruesa)
+
+//Boton para calzone
+let textoCalzone = document.createTextNode("Calzone")
+label6.appendChild(textoCalzone)
+let calzone = document.createElement("input")
+calzone.id = "calzone"
+calzone.type = "radio"
+calzone.name = "masa"
+label6.appendChild(calzone)

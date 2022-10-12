@@ -5,7 +5,6 @@ html{
 }
 
 /*Div principal*/
-
 #main{
     background-color: aquamarine;
     display:grid;
@@ -14,7 +13,6 @@ html{
 #dni{
     width: 150px;
     margin: 2px 0px 2px
-
 }
 #nombre{
     width: 300px;
@@ -30,12 +28,10 @@ html{
 }
 
 /*Estilado de el tipo de pizza*/
-
 h3{
     text-align: center;
 }
-
-#main > #formulario1{
+#main > #formulario1, #formulario2{
     margin: auto;
 }
 #individual{
@@ -49,4 +45,24 @@ h3{
 }
 #combo{
     margin-right: 20px;
+}
+
+/*Estilado para el tipo de masa de la pizza*/
+#fina{
+    margin-right: 30px;
+}
+#clasica{
+    margin-right: 22px;
+}
+#gruesa{
+    margin-right: 22px;
+}
+#calzone{
+    margin-right: 22px;
+}
+#lineas, #lineas2{
+    border-color: black;
+    border-radius: 50px;
+    background-color: white;
+    border-style:solid;
 }
