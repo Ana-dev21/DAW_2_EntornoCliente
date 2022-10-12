@@ -62,7 +62,7 @@ box4.id = "telf"
 box4.type = "text"
 contenedor.appendChild(box4)
 
-//Cabecera de los radioButtons
+//Cabecera de los radioButtons, Fieldset
 let cabecera = document.createElement("h3")
 cabecera.id = "titulo_botones"
 let text = document.createTextNode("¿Que tipo de pizza quieres?")
@@ -78,10 +78,11 @@ formBotones.appendChild(lineas)
 
 //Boton de pizza individual
 let label5 = document.createElement("label")
-label5.for = "tipo_pizzas"
+label5.id = "opcion"
 let textoRadio = document.createTextNode("Individual")
 label5.appendChild(textoRadio)
 let radio1 = document.createElement("input")
+radio1.id = "individual"
 radio1.type = "radio"
 radio1.name = "pizza"
 
@@ -92,6 +93,7 @@ lineas.appendChild(label5)
 let textoRadioDuo = document.createTextNode("Mediana")
 label5.appendChild(textoRadioDuo)
 let radio2 = document.createElement("input")
+radio2.id = "mediana"
 radio2.type = "radio"
 radio2.name = "pizza"
 label5.appendChild(radio2)
@@ -100,6 +102,7 @@ label5.appendChild(radio2)
 let textoRadioFamiliar = document.createTextNode("Familiar")
 label5.appendChild(textoRadioFamiliar)
 let radio3 = document.createElement("input")
+radio3.id = "familiar"
 radio3.type = "radio"
 radio3.name = "pizza"
 label5.appendChild(radio3)
@@ -109,5 +112,8 @@ let textoRadioCombo = document.createTextNode("Combo")
 label5.appendChild(textoRadioCombo)
 let radio4 = document.createElement("input")
 radio4.type = "radio"
+radio4.id = "combo"
 radio4.name = "pizza"
 label5.appendChild(radio4)
+
+//Cabecera del segundo RadioButton/Fieldset

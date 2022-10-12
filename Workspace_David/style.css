@@ -1,6 +1,7 @@
 html{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
+    text-align: justify;
 }
 
 /*Div principal*/
@@ -26,4 +27,26 @@ html{
 #telf{
     width: 150px;
     margin: 2px 0px 2px
+}
+
+/*Estilado de el tipo de pizza*/
+
+h3{
+    text-align: center;
+}
+
+#main > #formulario1{
+    margin: auto;
+}
+#individual{
+    margin-right: 20px;
+}
+#mediana{
+    margin-right: 20px;
+}
+#familiar{
+    margin-right: 20px;
+}
+#combo{
+    margin-right: 20px;
 }
