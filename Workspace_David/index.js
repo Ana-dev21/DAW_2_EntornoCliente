@@ -20,7 +20,7 @@ contenedor.appendChild(label)
 let box = document.createElement("input")
 box.id = "dni"
 box.type = "text"
-box.placeholder = "Tu DNI"
+box.placeholder = "Tú DNI"
 box.required
 contenedor.appendChild(box)
 
@@ -34,7 +34,7 @@ contenedor.appendChild(label2)
 let box2 = document.createElement("input")
 box2.id = "nombre"
 box2.type = "text"
-box2.placeholder = "Tu nombre y apellidos"
+box2.placeholder = "Tú nombre y apellidos"
 contenedor.appendChild(box2)
 
 // Campo dirección
@@ -47,7 +47,7 @@ contenedor.appendChild(label3)
 let box3 = document.createElement("input")
 box3.id = "dir"
 box3.type = "text"
-box3.placeholder = "Escribe tu dirección"
+box3.placeholder = "Escribe tú dirección"
 contenedor.appendChild(box3)
 
 // Campo telf
@@ -172,3 +172,80 @@ calzone.id = "calzone"
 calzone.type = "radio"
 calzone.name = "masa"
 label6.appendChild(calzone)
+
+//Cabecera para el Checkbox
+let tituloCheckbox = document.createElement("h3")
+tituloCheckbox.id = "titulo_ingredientes"
+let textoCheckbox = document.createTextNode("¿Algún extra?")
+tituloCheckbox.appendChild(textoCheckbox)
+contenedor.appendChild(tituloCheckbox)
+
+    //Bacon y checkbox
+let label7 = document.createElement("label")
+label7.id = "checkbox"
+let ingrediente1 = document.createElement("p")
+let txtingrediente1 = document.createTextNode("Bacon")
+label7.appendChild(ingrediente1)
+ingrediente1.appendChild(txtingrediente1)
+contenedor.appendChild(label7)
+let check1 = document.createElement("input")
+check1.type = "checkbox"
+check1.id= "ingredientes"
+ingrediente1.appendChild(check1)
+
+    //Peperonni y checkbox 
+let ingrediente2 = document.createElement("p")
+let txtingrediente2 = document.createTextNode("Peperonni")
+label7.appendChild(ingrediente2)
+ingrediente2.appendChild(txtingrediente2)
+let check2 = document.createElement("input")
+check2.type = "checkbox"
+check2.id = "ingredientes"
+ingrediente2.appendChild(check2)
+
+    //Piña y checkbox
+let ingrediente3 = document.createElement("p")
+let txtingrediente3 = document.createTextNode("Piña")
+ingrediente3.appendChild(txtingrediente3)
+label7.appendChild(ingrediente3)
+let check3 = document.createElement("input")
+check3.type = "checkbox"
+check3.id = "ingredientes"
+ingrediente3.appendChild(check3)
+
+    //Extra queso
+let ingrediente4 = document.createElement("p")
+let txtingrediente4 = document.createTextNode("Extra de queso")
+ingrediente4.appendChild(txtingrediente4)
+label7.appendChild(ingrediente4)
+
+let check4 = document.createElement("input")
+check4.id = "ingredientes"
+check4.type = "checkbox"
+ingrediente4.appendChild(check4)
+
+    //Extra barbacoa
+let ingrediente5 = document.createElement("p")
+let txtingrediente5 = document.createTextNode("Extra barbacoa")
+ingrediente5.appendChild(txtingrediente5)
+label7.appendChild(ingrediente5)
+
+let check5 = document.createElement("input")
+check5.type = "checkbox"
+check5.id = "ingredientes"
+ingrediente5.appendChild(check5)
+
+//Incorporación de imágenes
+let div2 = document.createElement("div")
+div2.id = "contenedor_img"
+let imagen1 = document.createElement("img")
+imagen1.id = "pizza1"
+imagen1.src ="/Pictures/image-156496.png"
+div2.appendChild(imagen1)
+contenedor.appendChild(div2)
+
+let imagen2 = document.createElement("img")
+imagen2.id = "pizza2"
+imagen2.src = "/Pictures/pngkey.com-pizza-steve-png-7813080.png"
+div2.appendChild(imagen2)
+contenedor.appendChild(div2)

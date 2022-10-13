@@ -6,7 +6,7 @@ html{
 
 /*Div principal*/
 #main{
-    background-color: aquamarine;
+    background-color: rgb(255,287,200);
     display:grid;
     margin: 20px;
 }
@@ -31,8 +31,9 @@ html{
 h3{
     text-align: center;
 }
-#main > #formulario1, #formulario2{
+#main > #formulario1, #formulario2, #checkbox{
     margin: auto;
+    display:flex
 }
 #individual{
     margin-right: 20px;
@@ -65,4 +66,30 @@ h3{
     border-radius: 50px;
     background-color: white;
     border-style:solid;
+}
+
+/*Estilado de los ingredientes extras*/
+#ingredientes{
+    margin-right: 22px;
+}
+#checkbox{
+    background-color: white;
+    border-radius: 50px;
+    border-color :coral;
+    border-style:dotted;
+}
+
+/*Estilado de las imagenes*/
+#contenedor_img{
+    float:none
+}
+#pizza1{
+    width: 10%;
+    float:left;
+    margin-top: 10px;
+}
+#pizza2{
+    width: 15%;
+    float:right;
+    margin-top: 10px;
 }
