@@ -249,3 +249,31 @@ imagen2.id = "pizza2"
 imagen2.src = "/Pictures/pngkey.com-pizza-steve-png-7813080.png"
 div2.appendChild(imagen2)
 contenedor.appendChild(div2)
+
+//Campo select
+let ultimo = document.createElement("h3")
+ultimo.id = "titulo_ciudad"
+let txtUltimo = document.createTextNode("Y por último.. ¿ Dónde mandamos la pizza ?")
+ultimo.appendChild(txtUltimo)
+contenedor.appendChild(ultimo)
+
+let seleccion = document.createElement("select")
+seleccion.id = "ciudades"
+
+let option1 = document.createElement("option")
+let option1texto = document.createTextNode("Madrid")
+option1.appendChild(option1texto)
+
+let option2 = document.createElement("option")
+let option2texto = document.createTextNode("Barcelona")
+option2.appendChild(option2texto)
+
+let option3 = document.createElement("option")
+let option3texto = document.createTextNode("Toledo")
+option3.appendChild(option3texto)
+
+seleccion.appendChild(option1)
+seleccion.appendChild(option2)
+seleccion.appendChild(option3)
+
+contenedor.appendChild(seleccion)

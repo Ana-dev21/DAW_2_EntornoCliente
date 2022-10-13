@@ -81,15 +81,20 @@ h3{
 
 /*Estilado de las imagenes*/
 #contenedor_img{
-    float:none
+    float:none;
+    margin-top: 10px;
 }
 #pizza1{
     width: 10%;
     float:left;
-    margin-top: 10px;
 }
 #pizza2{
     width: 15%;
     float:right;
-    margin-top: 10px;
+}
+
+/*Estilado del campo option*/
+#ciudades{
+    width: 200px;
+    margin: auto;
 }
