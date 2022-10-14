@@ -87,14 +87,34 @@ h3{
 #pizza1{
     width: 10%;
     float:left;
+    margin-left: 100px;
 }
 #pizza2{
     width: 15%;
     float:right;
+    margin-right: 80px;
 }
 
 /*Estilado del campo option*/
 #ciudades{
     width: 200px;
     margin: auto;
+}
+
+/*Estilado del text area*/
+#text_area{
+    margin:auto;
+}
+#observaciones{
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgb(160, 159, 159) ;
+}
+
+/*Estilado de la botonera final*/
+#enviar, #borrar{
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
 }

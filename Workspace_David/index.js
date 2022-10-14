@@ -180,7 +180,7 @@ let textoCheckbox = document.createTextNode("¿Algún extra?")
 tituloCheckbox.appendChild(textoCheckbox)
 contenedor.appendChild(tituloCheckbox)
 
-    //Bacon y checkbox
+    // --> Bacon y checkbox
 let label7 = document.createElement("label")
 label7.id = "checkbox"
 let ingrediente1 = document.createElement("p")
@@ -193,7 +193,7 @@ check1.type = "checkbox"
 check1.id= "ingredientes"
 ingrediente1.appendChild(check1)
 
-    //Peperonni y checkbox 
+    // --> Peperonni y checkbox 
 let ingrediente2 = document.createElement("p")
 let txtingrediente2 = document.createTextNode("Peperonni")
 label7.appendChild(ingrediente2)
@@ -203,7 +203,7 @@ check2.type = "checkbox"
 check2.id = "ingredientes"
 ingrediente2.appendChild(check2)
 
-    //Piña y checkbox
+  // --> Piña y checkbox
 let ingrediente3 = document.createElement("p")
 let txtingrediente3 = document.createTextNode("Piña")
 ingrediente3.appendChild(txtingrediente3)
@@ -213,7 +213,7 @@ check3.type = "checkbox"
 check3.id = "ingredientes"
 ingrediente3.appendChild(check3)
 
-    //Extra queso
+    // --> Extra queso
 let ingrediente4 = document.createElement("p")
 let txtingrediente4 = document.createTextNode("Extra de queso")
 ingrediente4.appendChild(txtingrediente4)
@@ -224,7 +224,7 @@ check4.id = "ingredientes"
 check4.type = "checkbox"
 ingrediente4.appendChild(check4)
 
-    //Extra barbacoa
+    // --> Extra barbacoa
 let ingrediente5 = document.createElement("p")
 let txtingrediente5 = document.createTextNode("Extra barbacoa")
 ingrediente5.appendChild(txtingrediente5)
@@ -235,7 +235,7 @@ check5.type = "checkbox"
 check5.id = "ingredientes"
 ingrediente5.appendChild(check5)
 
-//Incorporación de imágenes
+//Incorporación de imágenes al contenedor principal
 let div2 = document.createElement("div")
 div2.id = "contenedor_img"
 let imagen1 = document.createElement("img")
@@ -250,10 +250,10 @@ imagen2.src = "/Pictures/pngkey.com-pizza-steve-png-7813080.png"
 div2.appendChild(imagen2)
 contenedor.appendChild(div2)
 
-//Campo select
+//Campo select con sus 3 opciones
 let ultimo = document.createElement("h3")
 ultimo.id = "titulo_ciudad"
-let txtUltimo = document.createTextNode("Y por último.. ¿ Dónde mandamos la pizza ?")
+let txtUltimo = document.createTextNode("Y por último.. ¿Dónde mandamos la pizza?")
 ultimo.appendChild(txtUltimo)
 contenedor.appendChild(ultimo)
 
@@ -277,3 +277,39 @@ seleccion.appendChild(option2)
 seleccion.appendChild(option3)
 
 contenedor.appendChild(seleccion)
+
+// Creación de la cabecera observaciones + text área
+let div3 = document.createElement("div")
+div3.id = "text_area"
+
+let observaciones = document.createElement("h3")
+let txtObservaciones = document.createTextNode("¿Tienes alguna petición a tú pedido?")
+observaciones.appendChild(txtObservaciones)
+div3.appendChild(observaciones)
+
+let area = document.createElement("textarea")
+area.id = "observaciones"
+area.placeholder = " Haznos saber si tu domicilio es de dificil acceso, o si quieres añadir algo más a tu pedido "
+div3.appendChild(area)
+contenedor.appendChild(div3)
+
+//Boton submit
+let div4 = document.createElement("div4")
+
+let enviar = document.createElement("input")
+enviar.id = "enviar"
+enviar.type = "submit"
+enviar.value = "Hacer pedido!"
+div4.appendChild(enviar)
+contenedor.appendChild(enviar)
+
+//Boton borrar
+let borrar = document.createElement("input")
+borrar.id = "borrar"
+borrar.type = "reset"
+borrar.value = "Empezar de nuevo"
+div4.appendChild(borrar)
+contenedor.appendChild(borrar)
+
+
+
