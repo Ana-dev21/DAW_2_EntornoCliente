@@ -1,14 +1,6 @@
 
 *{margin:0;padding:0;box-sizing:border-box;}
 
-body{
-    background-image: url("image_home.jpg");
-    background-size:cover;
-    height: 100%;
-    width:100%;
-}
-
-
 nav {
     background-color: #D1512D;
     height: 80px;
@@ -28,3 +20,19 @@ nav li:hover{
     background-color:#fff;
     color:#000;
 }
+
+body{
+    background-image: url("image_home.jpg");
+    background-size:cover;
+    height: 100%;
+    width:100%;
+}
+
+formContainer{
+    background-color: #ffff;
+    background-size: cover;
+    height: 70%;
+    width:70%;
+}
+
+
