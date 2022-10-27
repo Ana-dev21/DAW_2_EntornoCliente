@@ -1,25 +1,19 @@
 function totalTamaños(){
 
     //Referencia a los tamaños de la pizza
-    let tamaño = document.getElementsByName("tamaño").values
+    let tamaño = document.getElementsByName("tamaño")
     let x = 0;
-
-    switch (tamaño){
-        
-        case tamaño[0]:
-            x = 5;
-            break;
-        case tamaño[1]:
-            x = 10;
-            break;
-        case tamaño[2]:
-            x = 15;
-            break;
-        default:
-            console.log("ERROR")
+    if(tamaño[0].checked){
+        x = 5;
+    }else if (tamaño[1].checked){
+        x = 10;
+    }else if (tamaño[2].checked){  
+        x = 15;
+    }else{
+        alert("Ninguna seleccionada")
     }
-    return alert(`El precio TOTAL es ${x}, DISFRUTA LA PIZZA`)
-    
+    let euros = parseInt(x)
+    return alert(`El precio es ${euros}`)
 }
 
 window.onload = function(){
