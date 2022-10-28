@@ -16,57 +16,17 @@
     }else{
         alert("Ninguna seleccionada")
     }
-    };
-    //checkbox info : https://mundocursos.online/como-saber-si-un-checkbox-esta-seleccionado-en-javascript/
-    let bacon = form.elements.getElementById('bacon');
-        bacon.addEventListener("change", validaCheckbox, false);
-        function validaCheckbox(){
-        var checked = checkbox.checked;
-        if(checked){
-            i+1;
-        }
-    };
-
-    let champis = form.elements.getElementById('champiñones');
-        champis.addEventListener("change", validaCheckbox, false);
-        function validaCheckbox(){
-        var checked = checkbox.checked;
-        if(checked){
-             i+1;
-        }
-    };
-
-    let piña = form.elements.getElementById('piña');
-        piña.addEventListener("change", validaCheckbox, false);
-        function validaCheckbox(){
-        var checked = checkbox.checked;
-        if(checked){
-             i+1;
-        }
-    };
-    let pulledpork = form.elements.getElementById('pulledPork');
-        pulledpork.addEventListener("change", validaCheckbox, false);
-        function validaCheckbox(){
-        var checked = checkbox.checked;
-        if(checked){
-             i+1;
-        }
-    };
-     let resultado = parseInt(t +i);
-    
-        return resultado;
-        alert("el precio de la pizza es "+cuenta+" euros");
     let euros = parseInt(x)
-    return euros;
+    return euros
+    };
 
  function totalIngredientes(){
     //comprobamos los ingredientes marcados recorriendo el array de ingredientes
     let  checkbox = document.getElementsByName('ingredientes');
     let t=0;
     for (let x=0; x<checkbox.length;x++){
-        if(checkbox[x].checked){
+        if(checkbox[x].checked)
             t++;
-        }
     }
     let euros= parseInt(t)
     return euros;
