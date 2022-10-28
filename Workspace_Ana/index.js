@@ -194,12 +194,19 @@ function mostrarFormulario() {
 
     //Añadimos una imagen
     //TODO Arreglar visualización de la imagen
+
+    let divImagen = document.createElement("div");
+    divImagen.id = "contenedorImagenes";
+
     var imagenForm = document.createElement("img");
     imagenForm.id ="imagenForm";
-    imagenForm.src = "Workspace_Ana\image_form_thankyou.jpg";
+    imagenForm.src = "/image_form_thankyou.jpg";
     imagenForm.alt = "Thank you image";
-    imagenForm.height = "200px";
+
+    divImagen.appendChild(imagenForm)
     formContainer.appendChild(imagenForm);
+    divPrincipal.appendChild(divImagen)
+    
 }
 
 /*** MÉTODOS PARA CREACIÓN DE ITEMS DEL FORMULARIO ***/

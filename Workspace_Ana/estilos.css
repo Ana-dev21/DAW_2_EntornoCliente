@@ -22,7 +22,7 @@ nav li:hover{
 }
 
 body{
-    background-image: url("image_home.jpg");
+    background-image: url("/image_home.jpg");
     background-size:cover;
     height: 100%;
     width:100%;
