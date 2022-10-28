@@ -240,13 +240,13 @@ let div2 = document.createElement("div")
 div2.id = "contenedor_img"
 let imagen1 = document.createElement("img")
 imagen1.id = "pizza1"
-imagen1.src ="/Pictures/image-156496.png"
+imagen1.src ="/Requerimiento1/Pictures/image-156496.png"
 div2.appendChild(imagen1)
 contenedor.appendChild(div2)
 
 let imagen2 = document.createElement("img")
 imagen2.id = "pizza2"
-imagen2.src = "/Pictures/pngkey.com-pizza-steve-png-7813080.png"
+imagen2.src = "/Requerimiento1/Pictures/pngkey.com-pizza-steve-png-7813080.png"
 div2.appendChild(imagen2)
 contenedor.appendChild(div2)
 

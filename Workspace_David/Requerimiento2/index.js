@@ -1,5 +1,8 @@
+/**
+ * Toma el valor del botón de radio que está marcado y lo devuelve como un número entero.
+ * @returns El valor de la variable x.
+ */
 function totalTamaños(){
-
     //Referencia a los tamaños de la pizza
     let tamaño = document.getElementsByName("tamaño")
     let x = 0;
@@ -16,36 +19,27 @@ function totalTamaños(){
     return euros
 }
 
+/**
+ * Toma el número de casillas marcadas y lo devuelve como un número entero.
+ * @returns El número de casillas marcadas.
+ */
+
 function totalIngredientes(){
-    const valor1 = document.getElementById("bacon");
-    const valor2 = document.getElementById("champiñones");
-    const valor3 = document.getElementById("piña");
-    const valor4 = document.getElementById("pulledPork")
-
-
-    //No me gusta nada este método, pero mientra tanto............. ;(
+    let  checkbox = document.getElementsByName("ingredientes");
     let y = 0;
-    if (valor1.checked == true) {
-      y++; 
-    }
-    if (valor2.checked == true) {
-      y++;
-    }
-    if (valor3.checked == true) {
-      y++;
-    }
-    if (valor4.cheked == true){
-        y++;
+    for (let x = 0; x <checkbox.length; x++){
+        if(checkbox[x].checked){
+            y++;
+        }
     }
     let euros = parseInt(y)
     return euros;
 }
 
 function precioTotal(){
-
-    return alert("El precio es  " + `${totalTamaños()}` + `${totalIngredientes()}` +"Euros")
-}
-
+    
+    return alert("El precio es  " + `${totalTamaños() + totalIngredientes()}` + " Euros")
+}    
 
 window.onload = function(){
 
