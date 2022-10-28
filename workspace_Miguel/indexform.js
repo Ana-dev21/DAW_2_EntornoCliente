@@ -55,9 +55,9 @@ let form=documents.forms.pedido;
              i+1;
         }
     };
- 
+     let resultado = parseInt(t +i);
     
-        return t + i;
+        return resultado;
         alert("el precio de la pizza es "+cuenta+" euros");
 }
 

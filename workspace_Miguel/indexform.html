@@ -9,7 +9,7 @@
 </head>
 <body>
     
-        <form name="pedido" >
+        <form name="pedido" id = "formulario" >
             <label for="nombre">Nombre</label><br>
             <input  type="text" id="nombre" name="nombre" placeholder="Juan" autofocus required />         
             <br><br>
@@ -36,7 +36,7 @@
             <label><input type="checkbox" id="piña"/>PIÑA</label><br/>
             <label><input type="checkbox" id="pulledPork"/>PULLED PORK</label><br/>
 
-            <button type="submit" id="finalizar">finalizar pedido</button>
+            <button type="submit" id="finalizar" onclick="cuenta()">finalizar pedido</button>
         </form>
     
 </body>
