@@ -51,6 +51,18 @@ menuArray.forEach((item) => {
     // if (index === 3) li.addEventListener("click",()=>{mostrarFormulario()});
 });
 
+//Cargamos el logo
+let divLogo = document.createElement("div");
+divLogo.id = "divLogo";
+
+var imagenLogo = document.createElement("img");
+imagenLogo.id ="imagenLogo";
+imagenLogo.src = "b_f_vector_logo.png";
+imagenLogo.alt = "Thank you image";
+
+divLogo.appendChild(imagenLogo)
+navbar.appendChild(imagenLogo);
+
 let formCreado = false
 
 /**
@@ -79,6 +91,20 @@ if(!formCreado){
     formContainer.appendChild(form);
     //form.method = "get";
     //form.action = "?"; --> No hará ninguna acción
+
+
+    //Añadimos una imagen
+    let divImagen = document.createElement("div");
+    divImagen.id = "contenedorImagenes";
+
+    var imagenForm = document.createElement("img");
+    imagenForm.id ="imagenForm";
+    imagenForm.src = "Save_The_Date.gif";
+    imagenForm.alt = "Thank you image";
+
+    divImagen.appendChild(imagenForm)
+    form.appendChild(imagenForm);
+
 
     //Creamos los campos del formulario
     //Nombre
@@ -201,26 +227,22 @@ if(!formCreado){
     commentTextArea.cols = "60";
     form.appendChild(commentTextArea);
 
+    //Añadir espacio antes del botón de envío 
+    var espacio = document.createElement("p");
+    form.appendChild(espacio);
+
     //Botón de Envío
     var sendButton = document.createElement("input");
     sendButton.type = "submit";
-    sendButton.id = sendButton;
+    sendButton.style.padding = "10px";
+    sendButton.style.margin = "5px";
+    sendButton.style.color = "#FFFFFF";
+    sendButton.style.backgroundColor = "#2B00FF";
+    sendButton.style.left = "300px";
+    sendButton.style.borderRadius = "30%";
+    sendButton.class = "sendButton";
     sendButton.value = "Enviar";
     form.appendChild(sendButton);
-
-    //Añadimos una imagen
-    //TODO Arreglar visualización de la imagen
-
-    let divImagen = document.createElement("div");
-    divImagen.id = "contenedorImagenes";
-
-    var imagenForm = document.createElement("img");
-    imagenForm.id ="imagenForm";
-    imagenForm.src = "/image_form_thankyou.jpg";
-    imagenForm.alt = "Thank you image";
-
-    divImagen.appendChild(imagenForm)
-    form.appendChild(imagenForm);
 
     formCreado = true;
     }  
