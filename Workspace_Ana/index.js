@@ -51,7 +51,7 @@ menuArray.forEach((item) => {
     // if (index === 3) li.addEventListener("click",()=>{mostrarFormulario()});
 });
 
-
+let formCreado = false
 
 /**
  * Muestra el formulario de Registro, al hacer click en Registro
@@ -60,6 +60,7 @@ function mostrarFormulario() {
     //Debería borrarse el formulario si ya se ha creado, para evitar duplicarlo
     //TODO Revisar document.removeChild(formContainer);
 
+if(!formCreado){
     /* Creamos el div contenedor del formulario */
     var formContainer = document.createElement("div");
 
@@ -86,10 +87,12 @@ function mostrarFormulario() {
     form.appendChild(nombre);
 
     var inputNombre = document.createElement("input");
+    inputNombre.className = "formItem";
     inputNombre.type = "text";
     inputNombre.name = "nombre";
-    inputNombre.size = "40";
+    inputNombre.size = "60";
     form.appendChild(inputNombre);
+
 
     //Apellidos
     var apellidos = document.createElement("p");
@@ -97,9 +100,10 @@ function mostrarFormulario() {
     form.appendChild(apellidos);
 
     var inputApellidos = document.createElement("input");
+    inputApellidos.className = "formItem";
     inputApellidos.type = "text";
     inputApellidos.name = "apellidos";
-    inputApellidos.size = "40";
+    inputApellidos.size = "60";
     form.appendChild(inputApellidos);
 
     //DNI
@@ -108,9 +112,10 @@ function mostrarFormulario() {
     form.appendChild(dni);
 
     var inputDni = document.createElement("input");
+    inputDni.className = "formItem";
     inputDni.type = "text";
     inputDni.name = "dni";
-    inputDni.size = "40";
+    inputDni.size = "60";
     form.appendChild(inputDni);
 
     //Teléfono
@@ -119,9 +124,10 @@ function mostrarFormulario() {
     form.appendChild(telefono);
 
     var inputTelefono = document.createElement("input");
+    inputTelefono.className = "formItem";
     inputTelefono.type = "number";
     inputTelefono.name = "dni";
-    inputTelefono.size = "40";
+    inputTelefono.size = "60";
     form.appendChild(inputTelefono);
 
     //Dirección
@@ -130,9 +136,10 @@ function mostrarFormulario() {
     form.appendChild(direccion);
 
     var inputDireccion = document.createElement("input");
+    inputDireccion.className = "formItem";
     inputDireccion.type = "text";
     inputDireccion.name = "direccion";
-    inputDireccion.size = "40";
+    inputDireccion.size = "60";
     form.appendChild(inputDireccion);
 
     //Menú
@@ -141,6 +148,7 @@ function mostrarFormulario() {
     form.appendChild(menu);
 
     var selectorMenu = document.createElement("select");
+    selectorMenu.className = "formItem";
     selectorMenu.name = "selectorMenu";
     var optionMenu1 = document.createElement("option");
     optionMenu1.textContent = "Normal";
@@ -162,6 +170,7 @@ function mostrarFormulario() {
 
     let opcionesAcompañantes = [0, 1, 2, 3];
     createRadioButton(opcionesAcompañantes, "acompañantes");
+    
 
     //Transporte
     //Cremos el título
@@ -189,8 +198,15 @@ function mostrarFormulario() {
     var commentTextArea = document.createElement("textarea");
     commentTextArea.name = "comments";
     commentTextArea.rows = "3";
-    commentTextArea.cols = "40";
+    commentTextArea.cols = "60";
     form.appendChild(commentTextArea);
+
+    //Botón de Envío
+    var sendButton = document.createElement("input");
+    sendButton.type = "submit";
+    sendButton.id = sendButton;
+    sendButton.value = "Enviar";
+    form.appendChild(sendButton);
 
     //Añadimos una imagen
     //TODO Arreglar visualización de la imagen
@@ -204,9 +220,10 @@ function mostrarFormulario() {
     imagenForm.alt = "Thank you image";
 
     divImagen.appendChild(imagenForm)
-    formContainer.appendChild(imagenForm);
-    divPrincipal.appendChild(divImagen)
-    
+    form.appendChild(imagenForm);
+
+    formCreado = true;
+    }  
 }
 
 /*** MÉTODOS PARA CREACIÓN DE ITEMS DEL FORMULARIO ***/
@@ -237,7 +254,7 @@ function createRadioButton(opciones, nombreSelector) {
         labelAcompañantes.textContent = element;
 
         form.appendChild(labelAcompañantes);
-    });
+    })
 }
 
 /**
@@ -266,8 +283,6 @@ function createCheckbox(opciones, nombreSelector) {
         form.appendChild(labelEstMusicales);
     });
 }
-
-
 
 
 
