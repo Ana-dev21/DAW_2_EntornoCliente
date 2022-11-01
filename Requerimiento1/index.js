@@ -69,8 +69,6 @@ let formCreado = false
  * Muestra el formulario de Registro, al hacer click en Registro
  */
 function mostrarFormulario() {
-    //Debería borrarse el formulario si ya se ha creado, para evitar duplicarlo
-    //TODO Revisar document.removeChild(formContainer);
 
 if(!formCreado){
     /* Creamos el div contenedor del formulario */
@@ -89,9 +87,6 @@ if(!formCreado){
     var form = document.createElement("form");
     form.id = "form";
     formContainer.appendChild(form);
-    //form.method = "get";
-    //form.action = "?"; --> No hará ninguna acción
-
 
     //Añadimos una imagen
     let divImagen = document.createElement("div");
