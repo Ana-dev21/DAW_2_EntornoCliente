@@ -57,8 +57,8 @@ divLogo.id = "divLogo";
 
 var imagenLogo = document.createElement("img");
 imagenLogo.id ="imagenLogo";
-imagenLogo.src = "b_f_vector_logo.png";
-imagenLogo.alt = "Thank you image";
+imagenLogo.src = "Pictures/b_f_vector_logo.png";
+imagenLogo.alt = "RF_Logo";
 
 divLogo.appendChild(imagenLogo)
 navbar.appendChild(imagenLogo);
@@ -99,8 +99,8 @@ if(!formCreado){
 
     var imagenForm = document.createElement("img");
     imagenForm.id ="imagenForm";
-    imagenForm.src = "Save_The_Date.gif";
-    imagenForm.alt = "Thank you image";
+    imagenForm.src = "Pictures/Save_The_Date.gif";
+    imagenForm.alt = "Save the date";
 
     divImagen.appendChild(imagenForm)
     form.appendChild(imagenForm);
